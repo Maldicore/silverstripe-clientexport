@@ -14,7 +14,7 @@
 ### Composer:
 
 ```
-composer require "maldicore/silverstripe-clientexport" "~1"
+composer require "maldicore/silverstripe-clientexport" "dev-master"
 ```
 
 ### Download:
