@@ -1,0 +1,27 @@
+{
+	"name": "maldicore/silverstripe-clientexport",
+	"description": "Exports all files and folders in the assets directory or database to a ZIP file in the CMS.",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/Maldicore/silverstripe-clientexport",
+	"keywords": ["silverstripe", "asset", "assets", "file", "files", "backup", "export", "zip", "compress", "database"],
+	"authors": [
+		{
+			"name": "Stan Hutcheon",
+			"email": "stanhutcheon@me.com"
+		},
+		{
+			"name": "Maldicore Group Pvt Ltd",
+			"email": "info@maldicore.com"
+		}
+	],
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://github.com/Maldicore/silverstripe-clientexport/issues"
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"extra" : {
+		"installer-name": "clientexport"
+	}
+}
