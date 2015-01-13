@@ -1,6 +1,6 @@
 ---
 Name: clientexport
 ---
-ClientAdmin:
+AssetAdmin:
   extensions:
     - ClientAdminExport
