@@ -87,7 +87,7 @@ class ClientAdminExport extends LeftAndMainExtension {
 		$zipTmpName = ASSETS_PATH . DIRECTORY_SEPARATOR . $zipName;
 		$zip = new ZipArchive();
 
-		if(!$zip->open($zipTmpName, ZipArchive::OVERWRITE)) {
+		if(!$zip->open($zipTmpName, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
 			user_error('Client Export Extension: Unable to read/write temporary zip archive', E_USER_ERROR);
 			return;
 		}
@@ -119,7 +119,7 @@ class ClientAdminExport extends LeftAndMainExtension {
 		$tmpName = TEMP_FOLDER . '/' . $name;
 		$zip = new ZipArchive();
 
-		if(!$zip->open($tmpName, ZipArchive::OVERWRITE)) {
+		if(!$zip->open($tmpName, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
 			user_error('Client Export Extension: Unable to read/write temporary zip archive', E_USER_ERROR);
 			return;
 		}
